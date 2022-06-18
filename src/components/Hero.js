@@ -4,9 +4,6 @@ import Man from "../assets/img/man_banner.png";
 import { RiFileDownloadFill } from "react-icons/ri";
 
 const Hero = () => {
-  const downloadFile = () => {
-    window.location.href = "https://yoursite.com/src/assets/files/exampleDoc.pdf";
-  };
   return (
     <section className="pt-[100px] bg-heroText bg-contain bg-no-repeat bg-center lg:bg-top" id="home">
       <div className="container mx-auto xl:px-[100px]">
@@ -25,7 +22,7 @@ const Hero = () => {
               <Social />
             </div>
 
-            <a href={require("../assets/CV/C.V.pdf")} download="Paul_Balta_CV" target="_blank">
+            <a href={require("../assets/CV/C.V.pdf")} download="Paul_Balta_CV">
               <button className="btn bg-accent mx-auto lg:mx-0 mb-6 shadow-xl shadow-[#fd59566b] realtive z-10">
                 Download my CV
                 <span className="text-xl ml-3">
